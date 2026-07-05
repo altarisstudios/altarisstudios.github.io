@@ -27,3 +27,4 @@ Website:
 https://altarisstudios.github.io
 ```
 Updated GitHub Pages deployment.
+Force GitHub Pages deploy.
