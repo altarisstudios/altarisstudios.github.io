@@ -1,30 +1,42 @@
-# Altaris Studio Website
+# Altaris Studio Website v2.0
 
-Official website and support portal for Altaris Studio games.
+Official website, support portal, project pages, and privacy policies for Altaris Studio games.
 
-## Pages
+## Structure
 
-- Home
-- Chromatically
-- Operation: Smoking Snakes
-- Privacy Policy
-- Support
-- Terms of Use
+```text
+assets/
+  css/style.css
+  js/app.js
+  images/
+  components/
+chromatically/
+  index.html
+  privacy.html
+operation-smoking-snakes/
+  index.html
+blog/
+support/
+privacy/
+index.html
+privacy.html
+support.html
+terms.html
+.nojekyll
+```
 
-## Deployment
+## GitHub Pages
 
-This repository is designed for GitHub Pages.
-
-Repository name:
+Use this repository name:
 
 ```text
 altarisstudios.github.io
 ```
 
-Website:
+Recommended GitHub Pages settings:
 
-```text
-https://altarisstudios.github.io
-```
-Updated GitHub Pages deployment.
-Force GitHub Pages deploy.
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /root
+
+The `.nojekyll` file disables Jekyll and publishes the static files directly.
