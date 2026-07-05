@@ -1,0 +1,62 @@
+
+:root{
+  --panel:rgba(18,15,10,.82);
+  --gold:#d9a441;
+  --gold-light:#ffdf8a;
+  --text:#f4efe5;
+  --muted:#b8ad9c;
+  --border:rgba(217,164,65,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 50% 0%,rgba(217,164,65,.22),transparent 34%),
+    linear-gradient(135deg,#020202,#11100e 52%,#030303);
+  line-height:1.7;
+}
+.container{width:min(980px,92%);margin:0 auto;padding:36px 0 72px}
+.header{text-align:center;padding:34px 0 46px}
+.logo{max-width:260px;width:70%;filter:drop-shadow(0 0 24px rgba(217,164,65,.28));margin-bottom:24px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:.78rem;margin-bottom:10px}
+h1{
+  font-size:clamp(2.6rem,7vw,5rem);
+  line-height:1;
+  background:linear-gradient(180deg,#fff6cf,#d9a441 55%,#7a4a12);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  margin-bottom:16px;
+}
+.subtitle{color:var(--muted)}
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:28px;
+  margin:20px 0;
+  box-shadow:0 18px 44px rgba(0,0,0,.35);
+}
+h2{color:var(--gold-light);margin-bottom:10px;font-size:1.45rem}
+p,li{color:var(--muted)}
+ul{padding-left:22px}
+a{color:var(--gold-light);text-decoration:none}
+a:hover{color:#fff3bf}
+.badge{
+  display:inline-block;
+  margin-top:14px;
+  padding:6px 12px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  color:var(--gold-light);
+  background:rgba(217,164,65,.08);
+}
+footer{
+  margin-top:44px;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  text-align:center;
+}
